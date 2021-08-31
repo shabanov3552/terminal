@@ -6006,6 +6006,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
   -webkit-box-flex: 0;
       -ms-flex: 0 1 42%;
           flex: 0 1 42%;
+  max-height: 374px;
 }
 
 .news-item__image img {
