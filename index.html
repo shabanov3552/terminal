@@ -80,9 +80,80 @@
 			</div>
 
 
-			<!-- выводить на  главной индустриальных подшипников -->
-
-			<!-- выводить на  главной автомобильных подшипников -->
+			<section class="first-block">
+				<div class="first-block__header">
+					<div class="first-block__title main-title">
+						<h1>Индустриальные подшипники</h1>
+					</div>
+					<a data-da=".first-block,767,3" href="index-auto.html" class="first-block__link">
+						<span>Автомобильные подшипники</span>
+						<svg>
+							<use xlink:href="img/icons/svg/sprite.svg#arrow_link"></use>
+						</svg>
+					</a>
+				</div>
+				<div class="first-block__form">
+					<div class="form__label">Подбор подшипников</div>
+					<form action="#" class="form">
+						<div class="form__line">
+							<input autocomplete="off" type="text" name="form[]" data-error="Введите название компании" data-value="Название компании" class="form__input">
+						</div>
+						<div class="form__row">
+							<svg>
+								<use xlink:href="img/icons/svg/sprite.svg#bearing_inner"></use>
+							</svg>
+							<div class="form__line">
+								<input autocomplete="off" type="text" name="form[]" data-error="Ошибка" data-value="Внутр. диаметр (мм) от" class="form__input">
+							</div>
+							<div class="form__line">
+								<input autocomplete="off" type="text" name="form[]" data-error="Ошибка" data-value="до" class="form__input">
+							</div>
+						</div>
+						<div class="form__row">
+							<svg>
+								<use xlink:href="img/icons/svg/sprite.svg#bearing_outer"></use>
+							</svg>
+							<div class="form__line">
+								<input autocomplete="off" type="text" name="form[]" data-error="Ошибка" data-value="Внеш. диаметр (мм) от" class="form__input">
+							</div>
+							<div class="form__line">
+								<input autocomplete="off" type="text" name="form[]" data-error="Ошибка" data-value="до" class="form__input">
+							</div>
+						</div>
+						<div class="form__row">
+							<svg>
+								<use xlink:href="img/icons/svg/sprite.svg#bearing_width"></use>
+							</svg>
+							<div class="form__line">
+								<input autocomplete="off" type="text" name="form[]" data-error="Ошибка" data-value="Ширина (мм) от" class="form__input">
+							</div>
+							<div class="form__line">
+								<input autocomplete="off" type="text" name="form[]" data-error="Ошибка" data-value="до" class="form__input">
+							</div>
+						</div>
+						<button type="submit" class="form__button">Подобрать</button>
+					</form>
+				</div>
+				<div class="first-block__bg">
+					<video muted preload="auto" src="videos/bearing-start.webm" class="first-block__video-bg js__prevideo"></video>
+					<video loop muted preload="auto" src="videos/bearing-main.webm" class="first-block__video-bg js__mainvideo"></video>
+				</div>
+			</section>
+			<script type="text/javascript">
+				var prevideo = document.querySelector(".js__prevideo");
+				var mainvideo = document.querySelector(".js__mainvideo");
+				mainvideo.style.opacity = '0';
+				window.addEventListener('load', function (e) {
+					setTimeout(() => {
+						prevideo.play();
+						prevideo.addEventListener('ended', function (e) {
+							prevideo.classList.add('end')
+							mainvideo.style.opacity = '1';
+							mainvideo.play();
+						});
+					}, 100);
+				});
+			</script>
 
 		</header>
 		<main class="page">

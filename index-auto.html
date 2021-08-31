@@ -80,9 +80,98 @@
 			</div>
 
 
-			<!-- выводить на  главной индустриальных подшипников -->
-
-			<!-- выводить на  главной автомобильных подшипников -->
+			<section class="first-block-auto">
+				<div class="first-block-auto__header">
+					<div class="first-block-auto__title main-title">
+						<h1>Автомобильные подшипники</h1>
+					</div>
+					<a data-da=".first-block-auto,767,3" href="index.html" class="first-block-auto__link">
+						<span>Индустриальные подшипники</span>
+						<svg>
+							<use xlink:href="img/icons/svg/sprite.svg#arrow_link"></use>
+						</svg>
+					</a>
+				</div>
+				<div class="first-block-auto__form">
+					<form action="#" class="form">
+						<div class="form__row">
+							<div class="form__inner">
+								<div class="form__label">Поиск по VIN</div>
+								<div class="form__line">
+									<input autocomplete="off" type="text" name="form[]" data-error="Ошибка" data-value="123456789012345678" class="form__input">
+								</div>
+							</div>
+							<div class="form__inner">
+								<div class="form__label">Поиск по данным производителя</div>
+								<div class="form__line">
+									<input autocomplete="off" type="text" name="form[]" data-error="Ошибка" data-value="Номер завода произв." class="form__input">
+								</div>
+								<div class="form__line">
+									<input autocomplete="off" type="text" name="form[]" data-error="Ошибка" data-value="Каталожный номер" class="form__input">
+								</div>
+							</div>
+						</div>
+						<div class="form__row">
+							<div class="form__inner">
+								<div class="form__label">Поиск по автомобилю</div>
+								<div class="form__line">
+									<select name="form[]" class="form__select">
+										<option value="1" selected="selected">Марка</option>
+										<option value="2">Какое-то большое название</option>
+										<option value="3">Пункт №3</option>
+										<option value="4">Пункт №4</option>
+									</select>
+								</div>
+								<div class="form__line">
+									<select name="form[]" class="form__select">
+										<option value="1" selected="selected">Модель</option>
+										<option value="2">Пункт №2</option>
+										<option value="3">Пункт №3</option>
+										<option value="4">Пункт №4</option>
+										<option value="2">Какое-то большое название</option>
+									</select>
+								</div>
+								<div class="form__line">
+									<select disabled name="form[]" class="form__select">
+										<option value="1" selected="selected">Кузов</option>
+										<option value="2">Пункт №2</option>
+										<option value="3">Пункт №3</option>
+										<option value="2">Какое-то большое название</option>
+										<option value="4">Пункт №4</option>
+									</select>
+								</div>
+								<div class="form__line">
+									<select disabled name="form[]" class="form__select">
+										<option value="1" selected="selected">Двигатель</option>
+										<option value="2">Какое-то большое название</option>
+										<option value="2">Пункт №2</option>
+										<option value="3">Пункт №3</option>
+										<option value="4">Пункт №4</option>
+									</select>
+								</div>
+							</div>
+						</div>
+						<div class="form__row">
+							<div class="form__inner">
+								<div class="form__label">Поиск по размеру</div>
+								<div class="form__line">
+									<input autocomplete="off" type="text" name="form[]" data-error="Ошибка" data-value="Ширина (мм)" class="form__input">
+								</div>
+								<div class="form__line">
+									<input autocomplete="off" type="text" name="form[]" data-error="Ошибка" data-value="Внутр. диаметр (мм)" class="form__input">
+								</div>
+								<div class="form__line">
+									<input autocomplete="off" type="text" name="form[]" data-error="Ошибка" data-value="Внеш. диаметр (мм)" class="form__input">
+								</div>
+							</div>
+						</div>
+						<button type="submit" class="form__button">Подобрать</button>
+					</form>
+				</div>
+				<div class="first-block-auto__bg">
+					<video autoplay loop muted preload="auto" src="videos/car-main.webm" class="first-block-auto__video-bg"></video>
+				</div>
+			</section>
 
 		</header>
 		<main class="page">
