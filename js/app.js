@@ -424,6 +424,10 @@ let modal_catalog = document.querySelector(".modal-catalog");
 let modal_close = document.querySelector('.modal-catalog__close');
 catalog__btn.addEventListener('click', function (e) {
 	let delay = 500;
+	let btn_logo = document.querySelector('.catalog-btn__logo');
+	if (e.target.classList.contains('catalog-btn__logo')) {
+		return
+	}
 	if (unlock) {
 		body_lock(delay);
 		modal_catalog.classList.toggle("_active");
