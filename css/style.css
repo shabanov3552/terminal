@@ -981,6 +981,11 @@ textarea.input {
   fill: #0bb20c;
 }
 
+.parsley-required,
+.parsley-type {
+  color: #db5959;
+}
+
 ._ibg {
   position: relative;
 }
@@ -1081,6 +1086,7 @@ textarea.input {
           user-select: none;
   white-space: nowrap;
   width: auto;
+  overflow: hidden;
 }
 
 .nice-select:hover {
@@ -1114,6 +1120,10 @@ textarea.input {
   -o-transition: all 0.15s ease-in-out;
   transition: all 0.15s ease-in-out;
   width: 10px;
+}
+
+.nice-select.open {
+  overflow: visible;
 }
 
 .nice-select.open:after {
