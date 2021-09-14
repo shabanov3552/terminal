@@ -434,7 +434,7 @@ catalog__btn.addEventListener('click', function (e) {
 	}
 });
 modal_close.addEventListener('click', function (e) {
-	body_lock();
+	body_lock(100);
 	modal_catalog.classList.remove("_active");
 });
 
@@ -694,6 +694,12 @@ for (let index = 0; index < popup_link.length; index++) {
 		e.preventDefault();
 	})
 }
+function focus_input(item) {
+	let form__input = document.querySelector('.popup_' + item + ' input');
+	setTimeout(() => {
+		form__input.focus()
+	}, 550);
+}
 for (let index = 0; index < popups.length; index++) {
 	const popup = popups[index];
 	popup.addEventListener("click", function (e) {
@@ -703,6 +709,7 @@ for (let index = 0; index < popups.length; index++) {
 	});
 }
 function popup_open(item, video = '') {
+	focus_input(item)
 	let activePopup = document.querySelectorAll('.popup._active');
 	if (activePopup.length > 0) {
 		popup_close('', false);
@@ -720,6 +727,7 @@ function popup_open(item, video = '') {
 		history.pushState('', '', '#' + item);
 	}
 }
+
 function popup_close(item, bodyUnlock = true) {
 	if (unlock) {
 		if (!item) {
@@ -1344,12 +1352,11 @@ function inputs_init(inputs) {
 					//'+38(999) 999 9999'
 					//'+375(99)999-99-99'
 					input.classList.add('_mask');
-					Inputmask("+375 (99) 9999999", {
-						//"placeholder": '',
+					Inputmask("+7(999) 999 9999", {
 						clearIncomplete: true,
 						clearMaskOnLostFocus: true,
 						onincomplete: function () {
-							input_clear_mask(input, input_g_value);
+							input_clear_mask(input);
 						}
 					}).mask(input);
 				}
@@ -1412,11 +1419,11 @@ function inputs_init(inputs) {
 function input_placeholder_add(input) {
 	const input_g_value = input.getAttribute('data-value');
 	if (input.value == '' && input_g_value != '') {
-		input.insertAdjacentHTML('afterend', '<span class="form__input-clear"><img src="img/icons/svg/input_clear.svg" alt=""></span>');
+		input.insertAdjacentHTML('afterend', '<span class="form__input-clear"><img src="img/svg/input_clear.svg" alt=""></span>');
 		input.insertAdjacentHTML('afterend', '<span class="form__input-placeholder">' + input_g_value + '</span>');
 	}
 	if (input.value == '' && input_g_value == '') {
-		input.insertAdjacentHTML('afterend', '<span class="form__input-clear"><img src="img/icons/svg/input_clear.svg" alt=""></span>');
+		input.insertAdjacentHTML('afterend', '<span class="form__input-clear"><img src="img/svg/input_clear.svg" alt=""></span>');
 		input.insertAdjacentHTML('afterend', '<span class="form__input-placeholder"></span>');
 	}
 }
@@ -1430,7 +1437,6 @@ function input_focus_remove(input) {
 }
 function input_clear_mask(input, input_g_value) {
 	input.inputmask.remove();
-	input.value = input_g_value;
 	input_focus_remove(input);
 }
 //#endregion
@@ -1536,7 +1542,7 @@ function mapInit(n = 1) {
 	};
 	var map = new google.maps.Map(document.getElementById('map'), options);
 	var icon = {
-		url: 'img/icons/svg/map.svg',
+		url: 'img/svg/map.svg',
 		scaledSize: new google.maps.Size(43, 54),
 		anchor: new google.maps.Point(9, 10)
 	}
@@ -1664,3 +1670,4 @@ btn.on('click', function (e) {
 //#endregion
 
 
+$('.form').parsley();
