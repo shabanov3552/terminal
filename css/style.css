@@ -7888,6 +7888,14 @@ svg circle {
     padding: 26px 45px 37px 43px;
   }
 
+  .orders {
+    padding-bottom: 38px;
+  }
+
+  .news {
+    padding-bottom: 90px;
+  }
+
   .news__post {
     -webkit-box-flex: 0;
         -ms-flex: 0 1 50%;
@@ -7964,6 +7972,10 @@ svg circle {
     -webkit-box-flex: 0;
         -ms-flex: 0 1 50%;
             flex: 0 1 50%;
+  }
+
+  .articles {
+    padding-bottom: 90px;
   }
 
   .articles__post {
