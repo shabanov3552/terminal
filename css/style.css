@@ -8205,6 +8205,18 @@ svg circle {
     max-height: 150px;
   }
 
+  .orders {
+    padding-bottom: 38px;
+  }
+
+  .news {
+    padding-bottom: 90px;
+  }
+
+  .articles {
+    padding-bottom: 90px;
+  }
+
   .how-ord__row {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
