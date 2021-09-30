@@ -277,15 +277,54 @@ body._lock {
   -o-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
   cursor: pointer;
+  border-radius: 5px;
+  position: relative;
+}
+
+.form__button::after {
+  content: "";
+  position: absolute;
+  display: block;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 5px;
+  background: #e03733;
+  border-top: 1px solid #fff;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  -webkit-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+.form__button::before {
+  content: "";
+  position: absolute;
+  left: 14px;
+  top: 0;
+  border-top: 11px solid #fff;
+  border-left: 11px solid transparent;
+  border-right: 16.5px solid transparent;
+  border-bottom: none;
 }
 
 .form__button:hover {
   background-color: #2d4c80;
 }
 
+.form__button:hover::after {
+  background: #a00;
+}
+
 .form__button_transparent {
   background-color: transparent;
   border: solid 1px rgba(255, 255, 255, 0.5);
+}
+
+.form__button_transparent::before,
+.form__button_transparent::after {
+  display: none;
 }
 
 .form__button_transparent:hover {
@@ -3803,7 +3842,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 }
 
 .catalog-btn__logo img {
-  max-width: 100%;
+  width: 100%;
   pointer-events: none;
 }
 
@@ -3917,7 +3956,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
       -ms-flex: 0 0 255px;
           flex: 0 0 255px;
   font-size: 30px;
-  color: #006da0;
+  color: #d82d28;
   -webkit-transform: translate(0px, 0px);
       -ms-transform: translate(0px, 0px);
           transform: translate(0px, 0px);
@@ -3941,7 +3980,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 }
 
 .first-block__link svg use {
-  fill: #324769;
+  fill: #d82d28;
   -webkit-transition: all 0.3s ease 0s;
   -o-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
@@ -4027,7 +4066,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
       -ms-flex: 0 0 255px;
           flex: 0 0 255px;
   font-size: 30px;
-  color: #006da0;
+  color: #d82d28;
   -webkit-transform: translate(0px, 0px);
       -ms-transform: translate(0px, 0px);
           transform: translate(0px, 0px);
@@ -4051,7 +4090,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 }
 
 .first-block-auto__link svg use {
-  fill: #324769;
+  fill: #d82d28;
   -webkit-transition: all 0.3s ease 0s;
   -o-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
@@ -5201,10 +5240,44 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
   -webkit-transition: all 0.3s ease 0s;
   -o-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
+  position: relative;
+  border-radius: 5px;
+}
+
+.personal-data__btn::after {
+  content: "";
+  position: absolute;
+  display: block;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 5px;
+  background: #e03733;
+  border-top: 1px solid #fff;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  -webkit-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+.personal-data__btn::before {
+  content: "";
+  position: absolute;
+  left: 14px;
+  top: 0;
+  border-top: 11px solid #fff;
+  border-left: 11px solid transparent;
+  border-right: 16.5px solid transparent;
+  border-bottom: none;
 }
 
 .personal-data__btn:hover {
   background-color: #2d4c80;
+}
+
+.personal-data__btn:hover::after {
+  background: #a00;
 }
 
 .personal-data__btn:last-child {
@@ -5212,6 +5285,11 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
   background-color: transparent;
   border-radius: 3px;
   border: solid 1px rgba(0, 0, 0, 0.2);
+}
+
+.personal-data__btn:last-child::before,
+.personal-data__btn:last-child::after {
+  display: none;
 }
 
 .personal-data__btn:last-child:hover {
@@ -5820,6 +5898,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  cursor: pointer;
 }
 
 .jobs__form-col .form .input__file-icon {
@@ -7236,6 +7315,7 @@ svg circle {
     transition: all 0.3s ease 0s;
     padding: 0 15% 0 24%;
     z-index: 100;
+    width: 100%;
   }
 
   .catalog-btn__logo._active {
