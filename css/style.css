@@ -1025,6 +1025,11 @@ textarea.input {
   color: #db5959;
 }
 
+.clear-btn {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+
 ._ibg {
   position: relative;
 }
@@ -6879,6 +6884,11 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 
 .favorites__header {
   margin: 0px 0px 36px 0px;
+}
+
+.favorites__subtitle {
+  font-size: 30px;
+  margin: 0px 0px 20px 0px;
 }
 
 .favorites__title {

@@ -1592,15 +1592,17 @@ $(document).ready(function () {
 
 //#region автовысота для textarea
 
-var tx = document.getElementsByTagName('textarea');
-for (var i = 0; i < tx.length; i++) {
-	tx[i].setAttribute('style', 'height:' + (tx[i].scrollHeight) + 'px;overflow-y:hidden;');
-	tx[i].addEventListener("input", OnInput, false);
-}
-function OnInput() {
-	this.style.height = 'auto';
-	this.style.height = (this.scrollHeight) + 'px';
-}
+document.addEventListener("click", function (e) {
+	const el = e.target;
+	if (el.closest('textarea')) {
+		el.style.height = el.setAttribute('style', 'height: ' + el.scrollHeight + 'px');
+		el.classList.add('auto');
+		el.addEventListener('input', e => {
+			el.style.height = 'auto';
+			el.style.height = (el.scrollHeight) + 10 + 'px';
+		});
+	}
+});
 
 //#endregion
 
@@ -1649,25 +1651,31 @@ if (document.querySelectorAll('.order__more-btn').length > 0) {
 
 //#region Кнопка вверх и лого
 
-var btn = $('.top-button');
-var btn_logo = $('.catalog-btn__logo');
 
-$(window).scroll(function () {
-	if ($(window).scrollTop() > 1000) {
-		btn.addClass('_active');
-		btn_logo.addClass('_active');
+window.addEventListener('scroll', buttonToTop);
+function buttonToTop(e) {
+	let scr_val = window.pageYOffset;
+	const btnTop = document.querySelector('.top-button');
+	const btnLogo = document.querySelector('.catalog-btn__logo');
+	if (scr_val > 1500) {
+		btnTop.classList.add('_active');
+		btnLogo.classList.add('_active');
 	} else {
-		btn.removeClass('_active');
-		btn_logo.removeClass('_active');
+		btnTop.classList.remove('_active');
+		btnLogo.classList.remove('_active');
 	}
-});
+	btnTop.addEventListener("click", function (e) {
+		e.preventDefault()
+		window.scrollTo(0, 0);
+	});
+};
 
-btn.on('click', function (e) {
-	e.preventDefault();
-	$('html, body').animate({ scrollTop: 0 }, '300');
-});
+//#endregion
+
+//#region parslye init
+
+$('.form').parsley();
 
 //#endregion
 
 
-$('.form').parsley();

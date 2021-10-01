@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-	<title>Вакансии</title>
+	<title>Избранное</title>
 	<meta charset="UTF-8">
-	<link rel="stylesheet" href="css/style.min.css?_v=20211001220536">
+	<link rel="stylesheet" href="css/style.min.css">
 	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"> -->
@@ -33,7 +33,7 @@
 		</div>
 		<div class="header__bottom">
 			<div class="catalog-btn">
-				<a href="index.html" class="catalog-btn__logo"><img src="img/logo_white.svg?_v=1633100737143" alt=""></a>
+				<a href="index.html" class="catalog-btn__logo"><img src="img/logo_white.svg" alt=""></a>
 				<button type="button" class="catalog-btn__link"><span class="catalog-btn__title">Каталог</span></button>
 				<button type="button" class="catalog-btn__icon icon-menu">
 					<span></span>
@@ -42,7 +42,7 @@
 				</button>
 			</div>
 			<div class="header__b-left">
-				<a href="index.html" class="header__logo"><img src="img/logo.png?_v=1633100737143" alt=""></a>
+				<a href="index.html" class="header__logo"><img src="img/logo.png" alt=""></a>
 				<div class="header__logo-text">Оптово-розничная продажа подшипников</div>
 			</div>
 			<div class="header__b-right">
@@ -102,218 +102,283 @@
 		</li>
 	</ul>
 </nav>
-		<section class="jobs _container">
-			<div class="jobs__header">
-				<div class="jobs__title main-title">Вакансии</div>
-				<div class="jobs__desc">
-					<p class="jobs__text">ООО «Терминал» – это активно развивающаяся компания, у нас работают опытные специалисты высокой квалификации, и каждый сотрудник является профессионалом в своей области. Если Вы готовы выстраивать свою карьеру, хорошо зарабатывать и развиваться вместе с нами , тогда ждем Вас в нашей команде. Мы заинтересованы в привлечении настоящих профессионалов, а также начинающих специалистов.</p>
-					<p class="jobs__text">Если Вы не нашли подходящую вакансию, но уверены, что принесёте пользу компании, пришлите нам своё резюме, и мы обязательно свяжемся с Вами при необходимости. </p>
-					<p class="jobs__text">Резюме можно направить через <a href="#jobs-form" class="jobs__text_link">форму обратной связи</a> или на почту <a class="jobs__text_link" href="mailto:personal101@bk.ru">personal101@bk.ru</a>. Также для уточнения информации вы можете позвонить по номеру: <a class="jobs__text_link" href="tel:+79233115565">+7 923 311 55 65</a></p>
+		<section class="favorites">
+			<div class="favorites__header _container">
+				<div class="favorites__title main-title">Избранное</div>
+				<div class="favorites__sort">
+					<select name="form[]" class="favorites__select">
+						<option value="1" selected="selected">По возрастанию цены</option>
+						<option value="2">По убыванию цены</option>
+					</select>
+					<select name="form[]" class="favorites__select">
+						<option value="1" selected="selected">Показывать по 15 шт.</option>
+						<option value="2">Показывать по 30 шт.</option>
+						<option value="3">Показывать по 60 шт.</option>
+					</select>
 				</div>
 			</div>
-			<div class="jobs__main">
-				<ul class="jobs__list">
-					<li class="jobs__item">
-						<div class="vacancy">
-							<div class="vacancy__title">Менеджер по продажам</div>
-							<div class="vacancy__desc">Пару строк описания</div>
-							<div class="vacancy__row">
-								<div class="vacancy__name">Требования</div>
-								<div class="vacancy__text">Образование высшее, опыт работы в продажах строительной отрасли – от 3 лет. Опытный пользователь ПК (Word, Excel, 1C, Outlook). Коммуникабельность, активность, внимательность, ответственность, грамотная речь, умение управлять отношениями с клиентами.</div>
+			<div class="favorites__center">
+				<div class="favorites__list _container">
+					<div class="product">
+						<div class="product__image">
+							<img alt="" src="img/catalog/card_img_4.jpg">
+						</div>
+						<div class="product__labels">
+							<div class="product__label product__label_action">Акция</div>
+							<div class="product__label product__label_hit">Хит</div>
+							<div class="product__label product__label_new">Новинка</div>
+						</div>
+						<div class="product__center">
+							<a href="" class="product__name">Подшипник ступицы 10/27/11 NSK [B1050T12]</a>
+							<div class="product__article">Артикул 9283478</div>
+							<div class="product__sizes size">
+								<div class="size__item">
+									<img src="img/svg/bearing_inner_min.svg" alt="">
+									<span class="size__text">17 мм</span>
+								</div>
+								<div class="size__item">
+									<img src="img/svg/bearing_outer_min.svg" alt="">
+									<span class="size__text">30 мм</span>
+								</div>
+								<div class="size__item">
+									<img src="img/svg/bearing_width_min.svg" alt="">
+									<span class="size__text">7 мм</span>
+								</div>
 							</div>
-							<div class="vacancy__row">
-								<div class="vacancy__name">Обязанности</div>
-								<div class="vacancy__text">Работа с клиентами, консультирование, презентация всех предоставляемых видов услуг, оформление договоров, составление коммерческих предложений, ведение и расширение клиентской базы.</div>
-							</div>
-							<div class="vacancy__row">
-								<div class="vacancy__name">Условия работы</div>
-								<div class="vacancy__text">Официальное трудоустройство, заработная плата от 30 000 рублей (% от заключенных договоров).</div>
-							</div>
-							<div class="vacancy__row">
-								<div class="vacancy__name">Ключевые навыки</div>
-								<div class="vacancy__text">г. Сосновоборск</div>
-							</div>
-							<div class="vacancy__row">
-								<div class="vacancy__name">Заработная плата</div>
-								<div class="vacancy__text">Пятидневная рабочая неделя с 8.00 до 17.00</div>
+							<div class="product__stock">
+								<svg>
+									<use xlink:href=" img/svg/sprite.svg#stock_lot"></use>
+								</svg>
+								<span class="product__stock-text">Много в наличии</span>
 							</div>
 						</div>
-					</li>
-					<li class="jobs__item">
-						<div class="vacancy">
-							<div class="vacancy__title">Менеджер по продажам</div>
-							<div class="vacancy__desc">Пару строк описания</div>
-							<div class="vacancy__row">
-								<div class="vacancy__name">Требования</div>
-								<div class="vacancy__text">Образование высшее, опыт работы в продажах строительной отрасли – от 3 лет. Опытный пользователь ПК (Word, Excel, 1C, Outlook). Коммуникабельность, активность, внимательность, ответственность, грамотная речь, умение управлять отношениями с клиентами.</div>
+						<div class="product__col">
+							<div class="product__prices price">
+								<div class="price__main">47000 руб.</div>
+								<div class="price__old">51000 руб.</div>
+								<div class="price__discount">-10%</div>
 							</div>
-							<div class="vacancy__row">
-								<div class="vacancy__name">Обязанности</div>
-								<div class="vacancy__text">Работа с клиентами, консультирование, презентация всех предоставляемых видов услуг, оформление договоров, составление коммерческих предложений, ведение и расширение клиентской базы.</div>
-							</div>
-							<div class="vacancy__row">
-								<div class="vacancy__name">Условия работы</div>
-								<div class="vacancy__text">Официальное трудоустройство, заработная плата от 30 000 рублей (% от заключенных договоров).</div>
-							</div>
-							<div class="vacancy__row">
-								<div class="vacancy__name">Ключевые навыки</div>
-								<div class="vacancy__text">г. Сосновоборск</div>
-							</div>
-							<div class="vacancy__row">
-								<div class="vacancy__name">Заработная плата</div>
-								<div class="vacancy__text">Пятидневная рабочая неделя с 8.00 до 17.00</div>
-							</div>
-						</div>
-					</li>
-				</ul>
-			</div>
-			<div class="jobs__form" id="jobs-form">
-				<div class="jobs__form-col">
-					<div class="jobs__form-title">Свяжитесь с нами</div>
-					<div class="jobs__form-desc">В нашей организации всегда найдется место для подкованных работников. С нас достойная зарплата и комфортное рабочее место.</div>
-				</div>
-				<div class="jobs__form-col">
-					<form action="#" class="form">
-						<div class="form__line">
-							<input required autocomplete="off" type="text" name="form[]" data-error="Введите имя" data-value="Ваше имя" class="form__input">
-						</div>
-						<div class="form__line">
-							<input required autocomplete="off" type="email" name="email" data-parsley-trigger="change" data-parsley-required-message="Введите ваш e-mail" data-value="E-mail" class="form__input">
-						</div>
-						<div class="form__line">
-							<input autocomplete="off" type="text" name="form[]" data-error="Введите Телефон" data-value="Телефон" class="form__input _phone">
-						</div>
-						<div class="form__line">
-							<textarea autocomplete="off" name="form[]" data-value="Комментарий" data-error="Ошибка" class="form__input"></textarea>
-						</div>
-						<div class="form__line">
-							<input name="file" type="file" name="file" id="input__file" class="input input__file" multiple>
-							<label for="input__file" class="input__file-button">
-								<span class="input__file-icon-wrapper">
-									<svg class="input__file-icon">
-										<use xlink:href=" img/svg/sprite.svg#add_file"></use>
+							<div class="product__buttons">
+								<button type="submit" class="product__button form__button">В корзину</button>
+								<a href="#bye-click" class="product__button-item _popup-link">
+									<svg>
+										<use xlink:href=" img/svg/sprite.svg#bye_click"></use>
 									</svg>
-								</span>
-								<div class="input__file-button-text">Прикрепить файл</div>
-							</label>
+									<span>Купить в 1 клик</span>
+								</a>
+								<a href="" class="product__button-item">
+									<svg class="svg-stock-cross">
+										<use xlink:href=" img/svg/sprite.svg#stock_cross"></use>
+									</svg>
+									<span>Из избранного</span>
+								</a>
+							</div>
 						</div>
-						<button type="submit" class="form__button">Отправить</button>
-						<div class="form__checkbox">
-							<label class="checkbox">
-								<input data-error="Ошибка" class="checkbox__input" type="checkbox" checked value="1" name="form[]">
-								<span class="checkbox__text"><span>Я даю свое согласие на <a class="_popup-link" href="#consent">обработку персональных данных</a></span></span>
-							</label>
+					</div>
+					<div class="product">
+						<div class="product__image">
+							<img alt="" src="img/catalog/card_img_4.jpg">
 						</div>
-					</form>
-					<script>
-						const input = document.querySelector('.input__file');
-						const preview = document.querySelector('.input__file-button-text');
-						const fileIcon = document.querySelector('.input__file-icon-wrapper');
-						let clsBtn = clearBtnCreate();
-						input.style.opacity = 0;
-
-						input.addEventListener('change', insertFileName);
-						clsBtn.addEventListener('click', fileRemove);
-
-						function fileRemove(e) {
-							e.preventDefault();
-							input.value = '';
-							clsBtn.remove();
-							preview.textContent = `Прикрепить файл`;
-							preview.before(fileIcon);
-						}
-
-						function clearBtnCreate() {
-							let clearBtn = document.createElement('span');
-							clearBtn.classList.add('clear-btn');
-							clearBtn.insertAdjacentHTML(
-								'beforeend',
-								`<svg class="input__file-icon">
-										<use xlink:href=" img/svg/sprite.svg#close"></use>
-									</svg>`
-							);
-							return clearBtn
-						}
-
-
-						function insertFileName() {
-							while (preview.firstChild) {
-								preview.removeChild(preview.firstChild);
-							}
-
-							const curFiles = input.files;
-							if (curFiles.length === 0) {
-								const para = document.createElement('p');
-								para.textContent = 'Не выбрано ни одного файла';
-								preview.appendChild(para);
-							} else {
-								fileIcon.remove();
-								preview.before(clsBtn);
-								const list = document.createElement('ol');
-								preview.appendChild(list);
-								list.style.paddingLeft = "20px";
-								for (const file of curFiles) {
-									const listItem = document.createElement('li');
-									const para = document.createElement('p');
-									para.textContent = file.name;
-									listItem.appendChild(para);
-									list.appendChild(listItem);
-								}
-							}
-						}
-
-						// https://developer.mozilla.org/en-US/docs/Web/Media/Formats/Image_types
-						/* 						const fileTypes = [
-													'image/apng',
-													'image/bmp',
-													'image/gif',
-													'image/jpeg',
-													'image/pjpeg',
-													'image/png',
-													'image/svg+xml',
-													'image/tiff',
-													'image/webp',
-													`image/x-icon`
-												];
-						
-												function validFileType(file) {
-													return fileTypes.includes(file.type);
-												}
-						
-												function returnFileSize(number) {
-													if (number < 1024) {
-														return number + 'bytes';
-													} else if (number > 1024 && number < 1048576) {
-														return (number / 1024).toFixed(1) + 'KB';
-													} else if (number > 1048576) {
-														return (number / 1048576).toFixed(1) + 'MB';
-													}
-												} */
-					</script>
-					<!-- <script>
-						let input_file = document.querySelectorAll('.input__file');
-						Array.prototype.forEach.call(input_file, function (input) {
-							let label = input.nextElementSibling,
-								labelVal = label.querySelector('.input__file-button-text').innerText;
-							input.addEventListener('change', function (e) {
-								let countFiles = '';
-								console.log(this.files[0].name);
-								if (this.files && this.files.length >= 1)
-									countFiles = this.files.length;
-								if (countFiles) {
-									countFiles <= 1 ? console.log('1') : console.log('2');
-									if (countFiles <= 1) {
-										label.querySelector('.input__file-button-text').innerText = this.files[0].name;
-									} else {
-										label.querySelector('.input__file-button-text').innerText = 'Выбрано файлов: ' + countFiles;
-									}
-								} else {
-									label.querySelector('.input__file-button-text').innerText = labelVal;
-								}
-							});
-						});
-					</script> -->
+						<div class="product__labels">
+							<div class="product__label product__label_action">Акция</div>
+							<div class="product__label product__label_hit">Хит</div>
+							<div class="product__label product__label_new">Новинка</div>
+						</div>
+						<div class="product__center">
+							<a href="" class="product__name">Подшипник ступицы 10/27/11 NSK [B1050T12]</a>
+							<div class="product__article">Артикул 9283478</div>
+							<div class="product__sizes size">
+								<div class="size__item">
+									<img src="img/svg/bearing_inner_min.svg" alt="">
+									<span class="size__text">17 мм</span>
+								</div>
+								<div class="size__item">
+									<img src="img/svg/bearing_outer_min.svg" alt="">
+									<span class="size__text">30 мм</span>
+								</div>
+								<div class="size__item">
+									<img src="img/svg/bearing_width_min.svg" alt="">
+									<span class="size__text">7 мм</span>
+								</div>
+							</div>
+							<div class="product__stock">
+								<svg>
+									<use xlink:href=" img/svg/sprite.svg#stock_lot"></use>
+								</svg>
+								<span class="product__stock-text">Много в наличии</span>
+							</div>
+						</div>
+						<div class="product__col">
+							<div class="product__prices price">
+								<div class="price__main">47000 руб.</div>
+								<div class="price__old">51000 руб.</div>
+								<div class="price__discount">-10%</div>
+							</div>
+							<div class="product__buttons">
+								<button type="submit" class="product__button form__button">В корзину</button>
+								<a href="#bye-click" class="product__button-item _popup-link">
+									<svg>
+										<use xlink:href=" img/svg/sprite.svg#bye_click"></use>
+									</svg>
+									<span>Купить в 1 клик</span>
+								</a>
+								<a href="" class="product__button-item">
+									<svg class="svg-stock-cross">
+										<use xlink:href=" img/svg/sprite.svg#stock_cross"></use>
+									</svg>
+									<span>Из избранного</span>
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="product">
+						<div class="product__image">
+							<img alt="" src="img/catalog/card_img_4.jpg">
+						</div>
+						<div class="product__labels">
+							<div class="product__label product__label_action">Акция</div>
+							<div class="product__label product__label_hit">Хит</div>
+							<div class="product__label product__label_new">Новинка</div>
+						</div>
+						<div class="product__center">
+							<a href="" class="product__name">Подшипник ступицы 10/27/11 NSK [B1050T12]</a>
+							<div class="product__article">Артикул 9283478</div>
+							<div class="product__sizes size">
+								<div class="size__item">
+									<img src="img/svg/bearing_inner_min.svg" alt="">
+									<span class="size__text">17 мм</span>
+								</div>
+								<div class="size__item">
+									<img src="img/svg/bearing_outer_min.svg" alt="">
+									<span class="size__text">30 мм</span>
+								</div>
+								<div class="size__item">
+									<img src="img/svg/bearing_width_min.svg" alt="">
+									<span class="size__text">7 мм</span>
+								</div>
+							</div>
+							<div class="product__stock">
+								<svg>
+									<use xlink:href=" img/svg/sprite.svg#stock_lot"></use>
+								</svg>
+								<span class="product__stock-text">Много в наличии</span>
+							</div>
+						</div>
+						<div class="product__col">
+							<div class="product__prices price">
+								<div class="price__main">47000 руб.</div>
+								<div class="price__old">51000 руб.</div>
+								<div class="price__discount">-10%</div>
+							</div>
+							<div class="product__buttons">
+								<button type="submit" class="product__button form__button">В корзину</button>
+								<a href="#bye-click" class="product__button-item _popup-link">
+									<svg>
+										<use xlink:href=" img/svg/sprite.svg#bye_click"></use>
+									</svg>
+									<span>Купить в 1 клик</span>
+								</a>
+								<a href="" class="product__button-item">
+									<svg class="svg-stock-cross">
+										<use xlink:href=" img/svg/sprite.svg#stock_cross"></use>
+									</svg>
+									<span>Из избранного</span>
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="product">
+						<div class="product__image">
+							<img alt="" src="img/catalog/card_img_4.jpg">
+						</div>
+						<div class="product__labels">
+							<div class="product__label product__label_action">Акция</div>
+							<div class="product__label product__label_hit">Хит</div>
+							<div class="product__label product__label_new">Новинка</div>
+						</div>
+						<div class="product__center">
+							<a href="" class="product__name">Подшипник ступицы 10/27/11 NSK [B1050T12]</a>
+							<div class="product__article">Артикул 9283478</div>
+							<div class="product__sizes size">
+								<div class="size__item">
+									<img src="img/svg/bearing_inner_min.svg" alt="">
+									<span class="size__text">17 мм</span>
+								</div>
+								<div class="size__item">
+									<img src="img/svg/bearing_outer_min.svg" alt="">
+									<span class="size__text">30 мм</span>
+								</div>
+								<div class="size__item">
+									<img src="img/svg/bearing_width_min.svg" alt="">
+									<span class="size__text">7 мм</span>
+								</div>
+							</div>
+							<div class="product__stock">
+								<svg>
+									<use xlink:href=" img/svg/sprite.svg#stock_lot"></use>
+								</svg>
+								<span class="product__stock-text">Много в наличии</span>
+							</div>
+						</div>
+						<div class="product__col">
+							<div class="product__prices price">
+								<div class="price__main">47000 руб.</div>
+								<div class="price__old">51000 руб.</div>
+								<div class="price__discount">-10%</div>
+							</div>
+							<div class="product__buttons">
+								<button type="submit" class="product__button form__button">В корзину</button>
+								<a href="#bye-click" class="product__button-item _popup-link">
+									<svg>
+										<use xlink:href=" img/svg/sprite.svg#bye_click"></use>
+									</svg>
+									<span>Купить в 1 клик</span>
+								</a>
+								<a href="" class="product__button-item">
+									<svg class="svg-stock-cross">
+										<use xlink:href=" img/svg/sprite.svg#stock_cross"></use>
+									</svg>
+									<span>Из избранного</span>
+								</a>
+							</div>
+						</div>
+					</div>
 				</div>
+				<div class="pagging _container">
+	<a href="" class="pagging__arrow">
+		<svg>
+			<use xlink:href=" img/svg/sprite.svg#arrow_prev"></use>
+		</svg>
+	</a>
+	<ul class="pagging__list">
+		<li class="pagging__li">
+			<a href="" class="pagging__item">1</a>
+		</li>
+		<li class="pagging__li-dots">
+			<a href="" class="pagging__item-dots">...</a>
+		</li>
+		<li class="pagging__li">
+			<a href="" class="pagging__item">6</a>
+		</li>
+		<li class="pagging__li">
+			<a href="" class="pagging__item _active">7</a>
+		</li>
+		<li class="pagging__li">
+			<a href="" class="pagging__item">8</a>
+		</li>
+		<li class="pagging__li-dots">
+			<a href="" class="pagging__item-dots">...</a>
+		</li>
+		<li class="pagging__li">
+			<a href="" class="pagging__item">12</a>
+		</li>
+	</ul>
+	<a href="" class="pagging__arrow">
+		<svg>
+			<use xlink:href=" img/svg/sprite.svg#arrow_next"></use>
+		</svg>
+	</a>
+</div>
 			</div>
 		</section>
 		</main>
@@ -350,17 +415,17 @@
 						<div class="payment__row">
 							<div class="payment__item">
 								<picture>
-									<source srcset="img/svg/pay_1.svg" type="image/webp"><img src="img/svg/pay_1.svg?_v=1633100737143" alt="Mastercard">
+									<source srcset="img/svg/pay_1.svg" type="image/webp"><img src="img/svg/pay_1.svg" alt="Mastercard">
 								</picture>
 							</div>
 							<div class="payment__item">
 								<picture>
-									<source srcset="img/svg/pay_2.svg" type="image/webp"><img src="img/svg/pay_2.svg?_v=1633100737143" alt="Visa">
+									<source srcset="img/svg/pay_2.svg" type="image/webp"><img src="img/svg/pay_2.svg" alt="Visa">
 								</picture>
 							</div>
 							<div class="payment__item">
 								<picture>
-									<source srcset="img/svg/pay_3.svg" type="image/webp"><img src="img/svg/pay_3.svg?_v=1633100737143" alt="Мир">
+									<source srcset="img/svg/pay_3.svg" type="image/webp"><img src="img/svg/pay_3.svg" alt="Мир">
 								</picture>
 							</div>
 						</div>
@@ -819,7 +884,7 @@
 				<div class="popup__left">
 					<div class="basket-card">
 						<div class="basket-card__image">
-							<img src="img/catalog/card_img_1.jpg?_v=1633100737143" alt="">
+							<img src="img/catalog/card_img_1.jpg" alt="">
 						</div>
 						<div class="basket-card__center">
 							<a href="" class="basket-card__name">Радиально-упорные шариковые подшипник 3056206 2RS (3206 2RS)</a>
@@ -855,7 +920,7 @@
 					</div>
 					<div class="basket-card">
 						<div class="basket-card__image">
-							<img src="img/catalog/card_img_1.jpg?_v=1633100737143" alt="">
+							<img src="img/catalog/card_img_1.jpg" alt="">
 						</div>
 						<div class="basket-card__center">
 							<a href="" class="basket-card__name">Радиально-упорные шариковые подшипник 3056206 2RS (3206 2RS)</a>
@@ -891,7 +956,7 @@
 					</div>
 					<div class="basket-card">
 						<div class="basket-card__image">
-							<img src="img/catalog/card_img_1.jpg?_v=1633100737143" alt="">
+							<img src="img/catalog/card_img_1.jpg" alt="">
 						</div>
 						<div class="basket-card__center">
 							<a href="" class="basket-card__name">Радиально-упорные шариковые подшипник 3056206 2RS (3206 2RS)</a>
@@ -927,7 +992,7 @@
 					</div>
 					<div class="basket-card">
 						<div class="basket-card__image">
-							<img src="img/catalog/card_img_1.jpg?_v=1633100737143" alt="">
+							<img src="img/catalog/card_img_1.jpg" alt="">
 						</div>
 						<div class="basket-card__center">
 							<a href="" class="basket-card__name">Радиально-упорные шариковые подшипник 3056206 2RS (3206 2RS)</a>
@@ -963,7 +1028,7 @@
 					</div>
 					<div class="basket-card">
 						<div class="basket-card__image">
-							<img src="img/catalog/card_img_1.jpg?_v=1633100737143" alt="">
+							<img src="img/catalog/card_img_1.jpg" alt="">
 						</div>
 						<div class="basket-card__center">
 							<a href="" class="basket-card__name">Радиально-упорные шариковые подшипник 3056206 2RS (3206 2RS)</a>
@@ -1056,7 +1121,7 @@
 				</div>
 				<div class="popup__center search-result">
 					<a href="" class="search-result__item">
-						<div class="search-result__image"><img src="img/catalog/card_img_1.jpg?_v=1633100737143" alt=""></div>
+						<div class="search-result__image"><img src="img/catalog/card_img_1.jpg" alt=""></div>
 						<div class="search-result__content">
 							<div class="search-result__name">Радиально-упорные шариковые подшипник 3056206 2RS (3206 2RS)</div>
 							<div class="search-result__prices">
@@ -1066,7 +1131,7 @@
 						</div>
 					</a>
 					<a href="" class="search-result__item">
-						<div class="search-result__image"><img src="img/catalog/card_img_1.jpg?_v=1633100737143" alt=""></div>
+						<div class="search-result__image"><img src="img/catalog/card_img_1.jpg" alt=""></div>
 						<div class="search-result__content">
 							<div class="search-result__name">Радиально-упорные шариковые подшипник 3056206 2RS (3206 2RS)</div>
 							<div class="search-result__prices">
@@ -1076,7 +1141,7 @@
 						</div>
 					</a>
 					<a href="" class="search-result__item">
-						<div class="search-result__image"><img src="img/catalog/card_img_1.jpg?_v=1633100737143" alt=""></div>
+						<div class="search-result__image"><img src="img/catalog/card_img_1.jpg" alt=""></div>
 						<div class="search-result__content">
 							<div class="search-result__name">Радиально-упорные шариковые подшипник 3056206 2RS (3206 2RS)</div>
 							<div class="search-result__prices">
@@ -1086,7 +1151,7 @@
 						</div>
 					</a>
 					<a href="" class="search-result__item">
-						<div class="search-result__image"><img src="img/catalog/card_img_1.jpg?_v=1633100737143" alt=""></div>
+						<div class="search-result__image"><img src="img/catalog/card_img_1.jpg" alt=""></div>
 						<div class="search-result__content">
 							<div class="search-result__name">Радиально-упорные шариковые подшипник 3056206 2RS (3206 2RS)</div>
 							<div class="search-result__prices">
@@ -1096,7 +1161,7 @@
 						</div>
 					</a>
 					<a href="" class="search-result__item">
-						<div class="search-result__image"><img src="img/catalog/card_img_1.jpg?_v=1633100737143" alt=""></div>
+						<div class="search-result__image"><img src="img/catalog/card_img_1.jpg" alt=""></div>
 						<div class="search-result__content">
 							<div class="search-result__name">Радиально-упорные шариковые подшипник 3056206 2RS (3206 2RS)</div>
 							<div class="search-result__prices">
@@ -1106,7 +1171,7 @@
 						</div>
 					</a>
 					<a href="" class="search-result__item">
-						<div class="search-result__image"><img src="img/catalog/card_img_1.jpg?_v=1633100737143" alt=""></div>
+						<div class="search-result__image"><img src="img/catalog/card_img_1.jpg" alt=""></div>
 						<div class="search-result__content">
 							<div class="search-result__name">Радиально-упорные шариковые подшипник 3056206 2RS (3206 2RS)</div>
 							<div class="search-result__prices">
@@ -1116,7 +1181,7 @@
 						</div>
 					</a>
 					<a href="" class="search-result__item">
-						<div class="search-result__image"><img src="img/catalog/card_img_1.jpg?_v=1633100737143" alt=""></div>
+						<div class="search-result__image"><img src="img/catalog/card_img_1.jpg" alt=""></div>
 						<div class="search-result__content">
 							<div class="search-result__name">Радиально-упорные шариковые подшипник 3056206 2RS (3206 2RS)</div>
 							<div class="search-result__prices">
@@ -1126,7 +1191,7 @@
 						</div>
 					</a>
 					<a href="" class="search-result__item">
-						<div class="search-result__image"><img src="img/catalog/card_img_1.jpg?_v=1633100737143" alt=""></div>
+						<div class="search-result__image"><img src="img/catalog/card_img_1.jpg" alt=""></div>
 						<div class="search-result__content">
 							<div class="search-result__name">Радиально-упорные шариковые подшипник 3056206 2RS (3206 2RS)</div>
 							<div class="search-result__prices">
@@ -1136,7 +1201,7 @@
 						</div>
 					</a>
 					<a href="" class="search-result__item">
-						<div class="search-result__image"><img src="img/catalog/card_img_1.jpg?_v=1633100737143" alt=""></div>
+						<div class="search-result__image"><img src="img/catalog/card_img_1.jpg" alt=""></div>
 						<div class="search-result__content">
 							<div class="search-result__name">Радиально-упорные шариковые подшипник 3056206 2RS (3206 2RS)</div>
 							<div class="search-result__prices">
@@ -1223,8 +1288,8 @@
 	<!-- Swiper -->
 <!-- <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script> -->
 <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-<script src="js/vendors.min.js?_v=20211001220537"></script>
-<script src="js/app.min.js?_v=20211001220537"></script>
+<script src="js/vendors.min.js"></script>
+<script src="js/app.min.js"></script>
 </body>
 
 </html>
