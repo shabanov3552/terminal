@@ -298,17 +298,6 @@ body._lock {
   transition: all 0.3s ease 0s;
 }
 
-.form__button::before {
-  content: "";
-  position: absolute;
-  left: 14px;
-  top: 0;
-  border-top: 11px solid #fff;
-  border-left: 11px solid transparent;
-  border-right: 16.5px solid transparent;
-  border-bottom: none;
-}
-
 .form__button:hover {
   background-color: #2d4c80;
 }
@@ -5264,17 +5253,6 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
   -webkit-transition: all 0.3s ease 0s;
   -o-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
-}
-
-.personal-data__btn::before {
-  content: "";
-  position: absolute;
-  left: 14px;
-  top: 0;
-  border-top: 11px solid #fff;
-  border-left: 11px solid transparent;
-  border-right: 16.5px solid transparent;
-  border-bottom: none;
 }
 
 .personal-data__btn:hover {
