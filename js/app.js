@@ -1678,4 +1678,22 @@ $('.form').parsley();
 
 //#endregion
 
+// hovermain display
+$("div[data-wheel]").hover(function () {
+	var idNumber = $(this).data("wheel");
 
+	switch (idNumber) {
+		case 1:
+			$('#red_by_marking').toggleClass("_active");
+			break;
+		case 2:
+			$('#red_bearing_inner').toggleClass("_active");
+			break;
+		case 3:
+			$('#red_bearing_outer').toggleClass("_active");
+			break;
+		case 4:
+			$('#red_bearing_width').toggleClass("_active");
+			break;
+	}
+});
