@@ -3,7 +3,7 @@
 <head>
 	<title>Контакты</title>
 	<meta charset="UTF-8">
-	<link rel="stylesheet" href="css/style.min.css?_v=20211001220536">
+	<link rel="stylesheet" href="css/style.min.css?_v=20211201222056">
 	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"> -->
@@ -33,7 +33,7 @@
 		</div>
 		<div class="header__bottom">
 			<div class="catalog-btn">
-				<a href="index.html" class="catalog-btn__logo"><img src="img/logo_white.svg?_v=1633100737143" alt=""></a>
+				<a href="index.html" class="catalog-btn__logo"><img src="img/logo_white.svg?_v=1638372056395" alt=""></a>
 				<button type="button" class="catalog-btn__link"><span class="catalog-btn__title">Каталог</span></button>
 				<button type="button" class="catalog-btn__icon icon-menu">
 					<span></span>
@@ -42,7 +42,7 @@
 				</button>
 			</div>
 			<div class="header__b-left">
-				<a href="index.html" class="header__logo"><img src="img/logo.png?_v=1633100737143" alt=""></a>
+				<a href="index.html" class="header__logo"><img src="img/logo.png?_v=1638372056395" alt=""></a>
 				<div class="header__logo-text">Оптово-розничная продажа подшипников</div>
 			</div>
 			<div class="header__b-right">
@@ -82,10 +82,184 @@
 		</div>
 	</div>
 
-	
+	<!-- section class="first-block" -->
 	<!-- выводить на  главной индустриальных подшипников -->
-	
+	<!-- <section class="first-block">
+		<div class="first-block__header">
+			<div class="first-block__title main-title">
+				<h1>Индустриальные подшипники</h1>
+			</div>
+			<a data-da=".first-block,767,3" href="index-auto.html" class="first-block__link">
+				<span>Автомобильные подшипники</span>
+				<svg>
+					<use xlink:href=" img/svg/sprite.svg#arrow_link"></use>
+				</svg>
+			</a>
+		</div>
+		<div class="first-block__form">
+
+			<form action="#" class="form">
+				<div class="form__label">Поиск по всем товарам</div>
+				<div class="form__line" data-wheel="1">
+					<input autocomplete="off" type="text" name="form[]" data-error="Введите название компании" data-value="Что ищем?" class="form__input">
+				</div>
+				<button type="submit" class="form__button">Найти</button>
+			</form>
+			<form action="#" class="form">
+				<div class="form__label">Подбор подшипников</div>
+				<div class="form__row" data-wheel="2">
+					<img class="form__bearing" src="img/svg/bearing_inner.svg?_v=1638372056395" alt="">
+					<div class="form__line">
+						<input autocomplete="off" type="text" name="form[]" data-error="Ошибка" data-value="Внутр. диаметр (мм) от" class="form__input">
+					</div>
+					<div class="form__line">
+						<input autocomplete="off" type="text" name="form[]" data-error="Ошибка" data-value="до" class="form__input">
+					</div>
+				</div>
+				<div class="form__row" data-wheel="3">
+					<img class="form__bearing" src="img/svg/bearing_outer.svg?_v=1638372056395" alt="">
+					<div class="form__line">
+						<input autocomplete="off" type="text" name="form[]" data-error="Ошибка" data-value="Внеш. диаметр (мм) от" class="form__input">
+					</div>
+					<div class="form__line">
+						<input autocomplete="off" type="text" name="form[]" data-error="Ошибка" data-value="до" class="form__input">
+					</div>
+				</div>
+				<div class="form__row" data-wheel="4">
+					<img class="form__bearing" src="img/svg/bearing_width.svg?_v=1638372056395" alt="">
+					<div class="form__line">
+						<input autocomplete="off" type="text" name="form[]" data-error="Ошибка" data-value="Ширина (мм) от" class="form__input">
+					</div>
+					<div class="form__line">
+						<input autocomplete="off" type="text" name="form[]" data-error="Ошибка" data-value="до" class="form__input">
+					</div>
+				</div>
+				<button type="submit" class="form__button">Подобрать</button>
+			</form>
+		</div>
+		<div class="first-block__bg">
+			<video muted preload="auto" src="videos/bearing-start.webm" class="first-block__video-bg js__prevideo"></video>
+			<video loop muted preload="auto" src="videos/bearing-main.webm" class="first-block__video-bg js__mainvideo"></video>
+			<div class="first-block__red-hover">
+				<img src="img/red_bearing_inner.png?_v=1638372056395" alt="" class="first-block__red-img" id="red_bearing_inner">
+				<img src="img/red_bearing_outer.png?_v=1638372056395" alt="" class="first-block__red-img" id="red_bearing_outer">
+				<img src="img/red_bearing_width.png?_v=1638372056395" alt="" class="first-block__red-img" id="red_bearing_width">
+				<img src="img/red_by_marking.png?_v=1638372056395" alt="" class="first-block__red-img" id="red_by_marking">
+			</div>
+		</div>
+		<script type="text/javascript">
+			var prevideo = document.querySelector(".js__prevideo");
+			var mainvideo = document.querySelector(".js__mainvideo");
+			mainvideo.style.opacity = '0';
+			window.addEventListener('load', function (e) {
+				setTimeout(() => {
+					prevideo.play();
+					prevideo.addEventListener('ended', function (e) {
+						prevideo.classList.add('end')
+						mainvideo.style.opacity = '1';
+						mainvideo.play();
+					});
+				}, 150);
+			});
+		</script>
+	</section> -->
+
+
+	<!-- section class="first-block-auto" -->
 	<!-- выводить на  главной автомобильных подшипников -->
+	<!-- <section class="first-block-auto">
+		<div class="first-block-auto__header">
+			<div class="first-block-auto__title main-title">
+				<h1>Автомобильные подшипники</h1>
+			</div>
+			<a data-da=".first-block-auto,767,3" href="index.html" class="first-block-auto__link">
+				<span>Индустриальные подшипники</span>
+				<svg>
+					<use xlink:href=" img/svg/sprite.svg#arrow_link"></use>
+				</svg>
+			</a>
+		</div>
+		<div class="first-block-auto__form">
+			<form action="#" class="form">
+				<div class="form__row">
+					<div class="form__inner">
+						<div class="form__label">Поиск по VIN</div>
+						<div class="form__line">
+							<input autocomplete="off" type="text" name="form[]" data-error="Ошибка" data-value="VIN" class="form__input">
+						</div>
+					</div>
+					<div class="form__inner">
+						<div class="form__label">Поиск по данным производителя</div>
+						<div class="form__line">
+							<input autocomplete="off" type="text" name="form[]" data-error="Ошибка" data-value="Номер завода произв." class="form__input">
+						</div>
+						<div class="form__line">
+							<input autocomplete="off" type="text" name="form[]" data-error="Ошибка" data-value="Каталожный номер" class="form__input">
+						</div>
+					</div>
+				</div>
+				<div class="form__row">
+					<div class="form__inner">
+						<div class="form__label">Поиск по автомобилю</div>
+						<div class="form__line">
+							<select name="form[]" class="form__select">
+								<option value="1" selected="selected">Марка</option>
+								<option value="2">Какое-то большое название</option>
+								<option value="2">Какое-то большое название</option>
+								<option value="3">Пункт №3</option>
+								<option value="4">Пункт №4</option>
+							</select>
+						</div>
+						<div class="form__line">
+							<select name="form[]" class="form__select">
+								<option value="1" selected="selected">Модель</option>
+								<option value="2">Пункт №2</option>
+								<option value="3">Пункт №3</option>
+								<option value="4">Пункт №4</option>
+								<option value="2">Какое-то большое название</option>
+							</select>
+						</div>
+						<div class="form__line">
+							<select disabled name="form[]" class="form__select">
+								<option value="1" selected="selected">Кузов</option>
+								<option value="2">Пункт №2</option>
+								<option value="3">Пункт №3</option>
+								<option value="2">Какое-то большое название</option>
+								<option value="4">Пункт №4</option>
+							</select>
+						</div>
+						<div class="form__line">
+							<select name="form[]" class="form__select">
+								<option value="1" selected="selected">Место установки</option>
+								<option value="2">Какое-то большое название</option>
+								<option value="2">Пункт №2</option>
+								<option value="3">Пункт №3</option>
+								<option value="4">Пункт №4</option>
+							</select>
+						</div>
+					</div>
+				</div>
+				<div class="form__row">
+					<div class="form__inner">
+						<div class="form__label">Поиск по размеру</div>
+						<div class="form__line">
+							<input autocomplete="off" type="text" name="form[]" data-error="Ошибка" data-value="Ширина (мм)" class="form__input">
+						</div>
+						<div class="form__line">
+							<input autocomplete="off" type="text" name="form[]" data-error="Ошибка" data-value="Внутр. диаметр (мм)" class="form__input">
+						</div>
+						<div class="form__line">
+							<input autocomplete="off" type="text" name="form[]" data-error="Ошибка" data-value="Внеш. диаметр (мм)" class="form__input">
+						</div>
+					</div>
+				</div>
+				<button type="submit" class="form__button">Подобрать</button>
+			</form>
+		</div>
+		<div class="first-block-auto__bg">
+			<video autoplay loop muted preload="auto" src="videos/car-main.webm" class="first-block-auto__video-bg"></video>
+		</div>
+	</section> -->
 
 </header>
 <main class="page">
@@ -246,11 +420,11 @@
 				<div class="contacts__col _gallery">
 					<div class="contacts__col-inner">
 						<div class="contacts__subtitle">Красраб, 27, стр. 18</div>
-						<a href="img/address1.jpg" class="contacts__image"><img src="img/address1.jpg?_v=1633100737143" alt=""></a>
+						<a href="img/address1.jpg" class="contacts__image"><img src="img/address1.jpg?_v=1638372056395" alt=""></a>
 					</div>
 					<div class="contacts__col-inner">
 						<div class="contacts__subtitle">ул. Глинки, 17</div>
-						<a href="img/address2.jpg" class="contacts__image"><img src="img/address2.jpg?_v=1633100737143" alt=""></a>
+						<a href="img/address2.jpg" class="contacts__image"><img src="img/address2.jpg?_v=1638372056395" alt=""></a>
 					</div>
 				</div>
 			</div>
@@ -320,17 +494,17 @@
 						<div class="payment__row">
 							<div class="payment__item">
 								<picture>
-									<source srcset="img/svg/pay_1.svg" type="image/webp"><img src="img/svg/pay_1.svg?_v=1633100737143" alt="Mastercard">
+									<source srcset="img/svg/pay_1.svg" type="image/webp"><img src="img/svg/pay_1.svg?_v=1638372056395" alt="Mastercard">
 								</picture>
 							</div>
 							<div class="payment__item">
 								<picture>
-									<source srcset="img/svg/pay_2.svg" type="image/webp"><img src="img/svg/pay_2.svg?_v=1633100737143" alt="Visa">
+									<source srcset="img/svg/pay_2.svg" type="image/webp"><img src="img/svg/pay_2.svg?_v=1638372056395" alt="Visa">
 								</picture>
 							</div>
 							<div class="payment__item">
 								<picture>
-									<source srcset="img/svg/pay_3.svg" type="image/webp"><img src="img/svg/pay_3.svg?_v=1633100737143" alt="Мир">
+									<source srcset="img/svg/pay_3.svg" type="image/webp"><img src="img/svg/pay_3.svg?_v=1638372056395" alt="Мир">
 								</picture>
 							</div>
 						</div>
@@ -789,7 +963,7 @@
 				<div class="popup__left">
 					<div class="basket-card">
 						<div class="basket-card__image">
-							<img src="img/catalog/card_img_1.jpg?_v=1633100737143" alt="">
+							<img src="img/catalog/card_img_1.jpg?_v=1638372056395" alt="">
 						</div>
 						<div class="basket-card__center">
 							<a href="" class="basket-card__name">Радиально-упорные шариковые подшипник 3056206 2RS (3206 2RS)</a>
@@ -825,7 +999,7 @@
 					</div>
 					<div class="basket-card">
 						<div class="basket-card__image">
-							<img src="img/catalog/card_img_1.jpg?_v=1633100737143" alt="">
+							<img src="img/catalog/card_img_1.jpg?_v=1638372056395" alt="">
 						</div>
 						<div class="basket-card__center">
 							<a href="" class="basket-card__name">Радиально-упорные шариковые подшипник 3056206 2RS (3206 2RS)</a>
@@ -861,7 +1035,7 @@
 					</div>
 					<div class="basket-card">
 						<div class="basket-card__image">
-							<img src="img/catalog/card_img_1.jpg?_v=1633100737143" alt="">
+							<img src="img/catalog/card_img_1.jpg?_v=1638372056395" alt="">
 						</div>
 						<div class="basket-card__center">
 							<a href="" class="basket-card__name">Радиально-упорные шариковые подшипник 3056206 2RS (3206 2RS)</a>
@@ -897,7 +1071,7 @@
 					</div>
 					<div class="basket-card">
 						<div class="basket-card__image">
-							<img src="img/catalog/card_img_1.jpg?_v=1633100737143" alt="">
+							<img src="img/catalog/card_img_1.jpg?_v=1638372056395" alt="">
 						</div>
 						<div class="basket-card__center">
 							<a href="" class="basket-card__name">Радиально-упорные шариковые подшипник 3056206 2RS (3206 2RS)</a>
@@ -933,7 +1107,7 @@
 					</div>
 					<div class="basket-card">
 						<div class="basket-card__image">
-							<img src="img/catalog/card_img_1.jpg?_v=1633100737143" alt="">
+							<img src="img/catalog/card_img_1.jpg?_v=1638372056395" alt="">
 						</div>
 						<div class="basket-card__center">
 							<a href="" class="basket-card__name">Радиально-упорные шариковые подшипник 3056206 2RS (3206 2RS)</a>
@@ -1026,7 +1200,7 @@
 				</div>
 				<div class="popup__center search-result">
 					<a href="" class="search-result__item">
-						<div class="search-result__image"><img src="img/catalog/card_img_1.jpg?_v=1633100737143" alt=""></div>
+						<div class="search-result__image"><img src="img/catalog/card_img_1.jpg?_v=1638372056395" alt=""></div>
 						<div class="search-result__content">
 							<div class="search-result__name">Радиально-упорные шариковые подшипник 3056206 2RS (3206 2RS)</div>
 							<div class="search-result__prices">
@@ -1036,7 +1210,7 @@
 						</div>
 					</a>
 					<a href="" class="search-result__item">
-						<div class="search-result__image"><img src="img/catalog/card_img_1.jpg?_v=1633100737143" alt=""></div>
+						<div class="search-result__image"><img src="img/catalog/card_img_1.jpg?_v=1638372056395" alt=""></div>
 						<div class="search-result__content">
 							<div class="search-result__name">Радиально-упорные шариковые подшипник 3056206 2RS (3206 2RS)</div>
 							<div class="search-result__prices">
@@ -1046,7 +1220,7 @@
 						</div>
 					</a>
 					<a href="" class="search-result__item">
-						<div class="search-result__image"><img src="img/catalog/card_img_1.jpg?_v=1633100737143" alt=""></div>
+						<div class="search-result__image"><img src="img/catalog/card_img_1.jpg?_v=1638372056395" alt=""></div>
 						<div class="search-result__content">
 							<div class="search-result__name">Радиально-упорные шариковые подшипник 3056206 2RS (3206 2RS)</div>
 							<div class="search-result__prices">
@@ -1056,7 +1230,7 @@
 						</div>
 					</a>
 					<a href="" class="search-result__item">
-						<div class="search-result__image"><img src="img/catalog/card_img_1.jpg?_v=1633100737143" alt=""></div>
+						<div class="search-result__image"><img src="img/catalog/card_img_1.jpg?_v=1638372056395" alt=""></div>
 						<div class="search-result__content">
 							<div class="search-result__name">Радиально-упорные шариковые подшипник 3056206 2RS (3206 2RS)</div>
 							<div class="search-result__prices">
@@ -1066,7 +1240,7 @@
 						</div>
 					</a>
 					<a href="" class="search-result__item">
-						<div class="search-result__image"><img src="img/catalog/card_img_1.jpg?_v=1633100737143" alt=""></div>
+						<div class="search-result__image"><img src="img/catalog/card_img_1.jpg?_v=1638372056395" alt=""></div>
 						<div class="search-result__content">
 							<div class="search-result__name">Радиально-упорные шариковые подшипник 3056206 2RS (3206 2RS)</div>
 							<div class="search-result__prices">
@@ -1076,7 +1250,7 @@
 						</div>
 					</a>
 					<a href="" class="search-result__item">
-						<div class="search-result__image"><img src="img/catalog/card_img_1.jpg?_v=1633100737143" alt=""></div>
+						<div class="search-result__image"><img src="img/catalog/card_img_1.jpg?_v=1638372056395" alt=""></div>
 						<div class="search-result__content">
 							<div class="search-result__name">Радиально-упорные шариковые подшипник 3056206 2RS (3206 2RS)</div>
 							<div class="search-result__prices">
@@ -1086,7 +1260,7 @@
 						</div>
 					</a>
 					<a href="" class="search-result__item">
-						<div class="search-result__image"><img src="img/catalog/card_img_1.jpg?_v=1633100737143" alt=""></div>
+						<div class="search-result__image"><img src="img/catalog/card_img_1.jpg?_v=1638372056395" alt=""></div>
 						<div class="search-result__content">
 							<div class="search-result__name">Радиально-упорные шариковые подшипник 3056206 2RS (3206 2RS)</div>
 							<div class="search-result__prices">
@@ -1096,7 +1270,7 @@
 						</div>
 					</a>
 					<a href="" class="search-result__item">
-						<div class="search-result__image"><img src="img/catalog/card_img_1.jpg?_v=1633100737143" alt=""></div>
+						<div class="search-result__image"><img src="img/catalog/card_img_1.jpg?_v=1638372056395" alt=""></div>
 						<div class="search-result__content">
 							<div class="search-result__name">Радиально-упорные шариковые подшипник 3056206 2RS (3206 2RS)</div>
 							<div class="search-result__prices">
@@ -1106,7 +1280,7 @@
 						</div>
 					</a>
 					<a href="" class="search-result__item">
-						<div class="search-result__image"><img src="img/catalog/card_img_1.jpg?_v=1633100737143" alt=""></div>
+						<div class="search-result__image"><img src="img/catalog/card_img_1.jpg?_v=1638372056395" alt=""></div>
 						<div class="search-result__content">
 							<div class="search-result__name">Радиально-упорные шариковые подшипник 3056206 2RS (3206 2RS)</div>
 							<div class="search-result__prices">
@@ -1193,8 +1367,8 @@
 	<!-- Swiper -->
 <!-- <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script> -->
 <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-<script src="js/vendors.min.js?_v=20211001220537"></script>
-<script src="js/app.min.js?_v=20211001220537"></script>
+<script src="js/vendors.min.js?_v=20211201222056"></script>
+<script src="js/app.min.js?_v=20211201222056"></script>
 </body>
 
 </html>
