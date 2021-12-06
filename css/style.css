@@ -3930,7 +3930,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 }
 
 .first-block {
-  margin: 77px 0px 0px 0px;
+  margin: 10px 0px 0px 0px;
   padding: 0 0 0 90px;
 }
 
@@ -3941,7 +3941,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin: 0px 0px 108px 0px;
+  margin: 0px 0px 30px 0px;
   position: relative;
 }
 
@@ -3951,9 +3951,9 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
           flex: 0 0 255px;
   font-size: 30px;
   color: #d82d28;
-  -webkit-transform: translate(0px, 0px);
-      -ms-transform: translate(0px, 0px);
-          transform: translate(0px, 0px);
+  -webkit-transform: translate(0px, 70px);
+      -ms-transform: translate(0px, 70px);
+          transform: translate(0px, 70px);
   text-align: right;
   line-height: 32px;
   -webkit-transition: all 0.3s ease 0s;
@@ -4031,6 +4031,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
   z-index: -1;
   -o-object-fit: cover;
      object-fit: cover;
+  max-height: 700px;
 }
 
 .first-block .form__label {
@@ -4052,6 +4053,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
   transition: all 0.3s ease 0s;
   opacity: 0;
   visibility: hidden;
+  max-height: 700px;
 }
 
 .first-block .first-block__red-img._active {
@@ -7822,6 +7824,42 @@ svg circle {
 }
 
 @media (max-width: 1600px) {
+  .first-block__form .form:first-child {
+    margin: 0;
+  }
+
+  .first-block__first-form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-column-gap: 4px;
+       -moz-column-gap: 4px;
+            column-gap: 4px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+
+  .first-block__first-form .form__label {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 100%;
+            flex: 1 1 100%;
+  }
+
+  .first-block__first-form .form__line {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 auto;
+            flex: 1 1 auto;
+  }
+
+  .first-block__first-form .form__button {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 28%;
+            flex: 0 1 28%;
+  }
+
   .jobs__form-col {
     -webkit-box-flex: 0;
         -ms-flex: 0 1 50%;
@@ -7832,6 +7870,12 @@ svg circle {
     -webkit-box-flex: 0;
         -ms-flex: 0 1 50%;
             flex: 0 1 50%;
+  }
+}
+
+@media (max-width: 1476px) {
+  .first-block__title {
+    font-size: 40px;
   }
 }
 
@@ -7858,23 +7902,37 @@ svg circle {
   }
 
   .first-block {
-    margin: 25px 0px 0px 0px;
     padding: 0 0 0 40px;
-  }
-
-  .first-block__header {
-    margin: 0px 0px 38px 0px;
   }
 
   .first-block__link {
     position: absolute;
     right: 0px;
-    bottom: -82px;
+    bottom: -65px;
     width: 255px;
+    -webkit-transform: translate(0px, 0px);
+        -ms-transform: translate(0px, 0px);
+            transform: translate(0px, 0px);
   }
 
   .first-block__form .form__line {
     margin: 0px 0px 15px 0px;
+  }
+
+  .first-block__form .form__line._focus .form__input-placeholder {
+    top: 0;
+  }
+
+  .first-block__form .form__input {
+    padding: 20px 35px 8px 14px;
+  }
+
+  .first-block__form .form .form__input-placeholder {
+    top: 15px;
+  }
+
+  .first-block__form .form .form__input-clear {
+    top: 17px;
   }
 
   .first-block__form .form__row .form__bearing {
@@ -7887,6 +7945,18 @@ svg circle {
 
   .first-block__form .form__button {
     height: 54px;
+  }
+
+  .first-block__first-form .form__input {
+    height: 50px;
+    padding: 20px 35px 8px 14px;
+  }
+
+  .first-block__first-form .form__button {
+    height: 50px;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 28%;
+            flex: 0 1 28%;
   }
 
   .first-block-auto {
@@ -9310,6 +9380,10 @@ svg circle {
     margin: 0px 0px 20px 0px;
   }
 
+  .first-block__title {
+    font-size: 30px;
+  }
+
   .first-block__link {
     position: relative;
     -webkit-transform: none;
@@ -9349,6 +9423,12 @@ svg circle {
 
   .first-block__form {
     margin: 0px 0px 28px 0px;
+  }
+
+  .first-block__first-form .form__line {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 50%;
+            flex: 1 1 50%;
   }
 
   .first-block-auto {
@@ -10054,6 +10134,12 @@ svg circle {
 
 @media (max-width: 400px) {
   .first-block__form .form__row .form__line:last-child {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 99px;
+            flex: 0 0 99px;
+  }
+
+  .first-block__first-form .form__button {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 99px;
             flex: 0 0 99px;
