@@ -3587,7 +3587,6 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 
 .header {
   padding: 0px 125px 0px 64px;
-  margin: 0px 0px 60px 0px;
   position: relative;
 }
 
@@ -3932,6 +3931,9 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 .first-block {
   margin: 10px 0px 0px 0px;
   padding: 0 0 0 90px;
+  padding: 0 0 0 40px;
+  height: calc(100vh - 179px);
+  min-height: 750px;
 }
 
 .first-block__header {
@@ -4025,7 +4027,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 
 .first-block__video-bg {
   position: absolute;
-  bottom: -7%;
+  bottom: 0%;
   right: 4%;
   width: calc(100% - 435px);
   z-index: -1;
@@ -4040,9 +4042,13 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
   margin: 0px 0px 20px 0px;
 }
 
+.first-block .first-block__red-hover {
+  opacity: 0;
+}
+
 .first-block .first-block__red-img {
   position: absolute;
-  bottom: -7%;
+  bottom: 0%;
   right: 4%;
   width: calc(100% - 435px);
   -o-object-fit: cover;
@@ -7745,6 +7751,22 @@ svg circle {
     font-size: 34px;
   }
 
+  .header {
+    margin: 0px 0px 60px 0px;
+  }
+
+  .first-block {
+    height: auto;
+  }
+
+  .first-block__video-bg {
+    bottom: -7%;
+  }
+
+  .first-block .first-block__red-img {
+    bottom: -7%;
+  }
+
   .main-product__col {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -7824,6 +7846,10 @@ svg circle {
 }
 
 @media (max-width: 1600px) {
+  .first-block {
+    min-height: 680px;
+  }
+
   .first-block__form .form:first-child {
     margin: 0;
   }
@@ -7894,7 +7920,7 @@ svg circle {
 
   .header {
     padding: 0px 104px 0px 55px;
-    margin: 0px 0px 48px 0px;
+    margin: 0px 0px 0px 0px;
   }
 
   .right-menu {
@@ -7902,7 +7928,7 @@ svg circle {
   }
 
   .first-block {
-    padding: 0 0 0 40px;
+    min-height: 506px;
   }
 
   .first-block__link {
@@ -7945,6 +7971,14 @@ svg circle {
 
   .first-block__form .form__button {
     height: 54px;
+  }
+
+  .first-block__video-bg {
+    bottom: 0;
+  }
+
+  .first-block .first-block__red-img {
+    bottom: 0;
   }
 
   .first-block__first-form .form__input {
@@ -8577,6 +8611,14 @@ svg circle {
 
   .contacts__top .contacts__col:first-child {
     margin: 0px 0px 40px 0px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .first-block {
+    height: auto;
+    margin: 0px 0px 30px 0px;
+    min-height: auto;
   }
 }
 
