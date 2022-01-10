@@ -6960,7 +6960,6 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 }
 
 .result {
-  padding-bottom: 65px;
   overflow: hidden;
 }
 
@@ -7037,13 +7036,6 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
   display: none;
 }
 
-.result .first-block__video-bg {
-  bottom: -13%;
-}
-
-.result .first-block__red-img {
-  bottom: -13%;
-}
 
 .result .pagging__item {
   background-color: #fff;
