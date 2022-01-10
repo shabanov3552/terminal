@@ -7023,6 +7023,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 .result .first-block {
   position: relative;
   padding: 0;
+  min-height: 680px;
 }
 
 .result .first-block .form__label {
